@@ -31,7 +31,7 @@ const Preloader = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          Creative Developer Portfolio
+          Full Stack Developer Portfolio
         </motion.p>
       </div>
     </motion.div>

@@ -58,13 +58,20 @@ export const skills = [
 export const projects = [
   {
     number: "01",
-    title: "AI Hospital Management System",
+    title: "CareNova Hospital Management System",
     label: "Healthcare Web App",
-    stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
     description:
       "A smart healthcare web application with appointment booking, doctor details, responsive UI, and backend database integration.",
     github: "#",
-    live: "#",
+    live: "https://hospital-frontend-nine-mocha.vercel.app/",
   },
   {
     number: "02",
@@ -74,17 +81,17 @@ export const projects = [
     description:
       "A responsive online shopping website with product cards, cart system, checkout layout, and a modern user interface.",
     github: "#",
-    live: "#",
+    live: "https://ecom-frontend-cdrg.vercel.app/",
   },
   {
     number: "03",
-    title: "School Website",
+    title: "Job Portal-NexoraHIRE",
     label: "Education Website",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["Mern Stack"],
     description:
       "A professional school website with responsive layout, navbar, image slider, academic sections, and clean design.",
     github: "#",
-    live: "#",
+    live: "https://job-portal-ebon-eta.vercel.app/",
   },
   {
     number: "04",

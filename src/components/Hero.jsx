@@ -14,15 +14,26 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden px-4 pb-16 pt-32 md:px-8 md:pt-40">
+    <section
+      id="home"
+      className="relative min-h-screen overflow-hidden px-4 pb-16 pt-32 md:px-8 md:pt-40"
+    >
       <motion.div
         className="absolute left-[6%] top-24 h-64 w-64 rounded-full bg-electric/20 blur-3xl"
-        animate={{ x: [0, 40, -20, 0], y: [0, 25, -15, 0], scale: [1, 1.15, 0.96, 1] }}
+        animate={{
+          x: [0, 40, -20, 0],
+          y: [0, 25, -15, 0],
+          scale: [1, 1.15, 0.96, 1],
+        }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
         className="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-violet-600/20 blur-3xl"
-        animate={{ x: [0, -45, 20, 0], y: [0, -25, 35, 0], scale: [1, 0.95, 1.12, 1] }}
+        animate={{
+          x: [0, -45, 20, 0],
+          y: [0, -25, 35, 0],
+          scale: [1, 0.95, 1.12, 1],
+        }}
         transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
       />
 
@@ -34,8 +45,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <span className="rounded-full border border-cream/15 bg-cream/5 px-4 py-2">Portfolio 2026</span>
-            <span className="flex items-center gap-2"><FiMapPin /> {profile.location}</span>
+            <span className="rounded-full border border-cream/15 bg-cream/5 px-4 py-2">
+              Portfolio 2026
+            </span>
+            <span className="flex items-center gap-2">
+              <FiMapPin /> {profile.location}
+            </span>
           </motion.div>
 
           <motion.p
@@ -52,7 +67,11 @@ const Hero = () => {
               className="font-display text-[17vw] font-black uppercase leading-[0.78] tracking-[-0.11em] text-cream sm:text-[14vw] lg:text-[9.2vw]"
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
-              transition={{ duration: 1.1, delay: 0.55, ease: [0.76, 0, 0.24, 1] }}
+              transition={{
+                duration: 1.1,
+                delay: 0.55,
+                ease: [0.76, 0, 0.24, 1],
+              }}
             >
               Govind
             </motion.h1>
@@ -62,7 +81,11 @@ const Hero = () => {
               className="font-display text-[17vw] font-black uppercase leading-[0.83] tracking-[-0.11em] text-outline sm:text-[14vw] lg:text-[9.2vw]"
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
-              transition={{ duration: 1.1, delay: 0.7, ease: [0.76, 0, 0.24, 1] }}
+              transition={{
+                duration: 1.1,
+                delay: 0.7,
+                ease: [0.76, 0, 0.24, 1],
+              }}
             >
               Thakur
             </motion.h1>
@@ -97,16 +120,28 @@ const Hero = () => {
             Available
           </div>
           <p className="mb-8 text-xl leading-relaxed text-cream/75 md:text-2xl">
-            I build modern, responsive and user-friendly web applications with React.js, MERN stack, clean UI and smooth animated experiences.
+            I build modern, responsive and user-friendly web applications with
+            React.js, MERN stack, clean UI and smooth animated experiences.
           </p>
           <div className="grid gap-3 sm:grid-cols-3">
-            <a href={`mailto:${profile.email}`} className="premium-btn bg-cream text-ink hover:bg-electric">
+            <a
+              href={`mailto:${profile.email}`}
+              className="premium-btn bg-cream text-ink hover:bg-electric"
+            >
               Hire Me <FiArrowDownRight />
             </a>
-            <a href={profile.resume} className="premium-btn border border-cream/15 bg-cream/5 text-cream hover:border-electric/60 hover:text-electric" download>
+            <a
+              href="/Resume_Govind_Thakur.pdf"
+              download="Resume_Govind_Thakur.pdf"
+              className="premium-btn border border-cream/15 bg-cream/5 text-cream hover:border-electric/60 hover:text-electric"
+              
+            >
               Resume <FiDownload />
             </a>
-            <a href="#work" className="premium-btn border border-cream/15 bg-cream/5 text-cream hover:border-electric/60 hover:text-electric">
+            <a
+              href="#work"
+              className="premium-btn border border-cream/15 bg-cream/5 text-cream hover:border-electric/60 hover:text-electric"
+            >
               Projects <FiArrowDownRight />
             </a>
           </div>
@@ -116,8 +151,17 @@ const Hero = () => {
       <div className="marquee mt-20 border-y border-cream/10 py-5">
         <div className="marquee-track">
           {Array.from({ length: 2 }).map((_, groupIndex) => (
-            <div key={groupIndex} className="flex shrink-0 items-center gap-8 pr-8 font-display text-2xl font-black uppercase tracking-[-0.03em] text-cream/75 md:text-4xl">
-              <span>Movement</span><span className="text-electric">React</span><span>Emotion</span><span>Storytelling</span><span className="text-electric">MERN</span><span>Intention</span><span>Premium UI</span>
+            <div
+              key={groupIndex}
+              className="flex shrink-0 items-center gap-8 pr-8 font-display text-2xl font-black uppercase tracking-[-0.03em] text-cream/75 md:text-4xl"
+            >
+              <span>Movement</span>
+              <span className="text-electric">React</span>
+              <span>Emotion</span>
+              <span>Storytelling</span>
+              <span className="text-electric">MERN</span>
+              <span>Intention</span>
+              <span>Premium UI</span>
             </div>
           ))}
         </div>
