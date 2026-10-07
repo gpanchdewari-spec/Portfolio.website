@@ -15,20 +15,4 @@ npm run dev
 npm run build
 ```
 
-## Edit portfolio data
 
-Edit this file:
-
-```text
-src/data/portfolioData.js
-```
-
-## Resume button
-
-Put your resume PDF here:
-
-```text
-public/Govind_Thakur_Resume.pdf
-```
-
-The Download Resume button is already connected to `/Govind_Thakur_Resume.pdf`.
